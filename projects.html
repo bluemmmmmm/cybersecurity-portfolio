@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cybersecurity Projects Portfolio - Showcasing security projects and research">
+    <title>Projects - Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass-effect">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>CyberSec</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content fade-in">
+                <h1 class="page-title gradient-text">Projects Showcase</h1>
+                <p class="page-subtitle">Exploring security challenges and innovative solutions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Options -->
+    <section class="project-filters">
+        <div class="container">
+            <div class="filter-buttons fade-in">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="pentesting">Penetration Testing</button>
+                <button class="filter-btn" data-filter="tools">Security Tools</button>
+                <button class="filter-btn" data-filter="research">Research</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects">
+        <div class="container">
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card glass-effect fade-in" data-category="pentesting">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Penetration Testing</span>
+                            <span class="tag">Web Security</span>
+                        </div>
+                        <h3 class="project-title">Web Application Security Assessment</h3>
+                        <p class="project-description">
+                            Comprehensive security testing of a large-scale e-commerce platform, 
+                            identifying critical vulnerabilities including SQL injection and XSS flaws.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-code"></i> Burp Suite</span>
+                            <span><i class="fas fa-code"></i> OWASP ZAP</span>
+                            <span><i class="fas fa-code"></i> Python</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card glass-effect fade-in" data-category="tools">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Tool Development</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <h3 class="project-title">Custom Network Scanner</h3>
+                        <p class="project-description">
+                            Developed a high-performance network reconnaissance tool with advanced 
+                            service detection and vulnerability correlation capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-code"></i> Python</span>
+                            <span><i class="fas fa-code"></i> Nmap</span>
+                            <span><i class="fas fa-code"></i> Scapy</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card glass-effect fade-in" data-category="research">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Research</span>
+                            <span class="tag">Malware Analysis</span>
+                        </div>
+                        <h3 class="project-title">Malware Behavior Analysis</h3>
+                        <p class="project-description">
+                            Research project analyzing emerging malware families and their evasion 
+                            techniques, presented at major cybersecurity conference.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-code"></i> IDA Pro</span>
+                            <span><i class="fas fa-code"></i> Ghidra</span>
+                            <span><i class="fas fa-code"></i> Volatility</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card glass-effect fade-in" data-category="automation">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Automation</span>
+                            <span class="tag">DevSecOps</span>
+                        </div>
+                        <h3 class="project-title">Automated Security Testing Pipeline</h3>
+                        <p class="project-description">
+                            Built CI/CD security testing framework integrating SAST, DAST, and 
+                            dependency scanning with automated reporting.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-code"></i> Jenkins</span>
+                            <span><i class="fas fa-code"></i> Docker</span>
+                            <span><i class="fas fa-code"></i> Python</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card glass-effect fade-in" data-category="pentesting">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Network Security</span>
+                            <span class="tag">Red Team</span>
+                        </div>
+                        <h3 class="project-title">Enterprise Network Penetration Test</h3>
+                        <p class="project-description">
+                            Led red team engagement simulating advanced persistent threat (APT) 
+                            against enterprise network infrastructure.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-code"></i> Metasploit</span>
+                            <span><i class="fas fa-code"></i> Cobalt Strike</span>
+                            <span><i class="fas fa-code"></i> PowerShell</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card glass-effect fade-in" data-category="tools">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Cryptography</span>
+                            <span class="tag">Tool Development</span>
+                        </div>
+                        <h3 class="project-title">Password Audit Tool</h3>
+                        <p class="project-description">
+                            Created enterprise password strength analyzer with policy compliance 
+                            checking and breach detection capabilities.
+                        </p>
+                        <div class="project-tech">
+                            <span><i class="fas fa-code"></i> Python</span>
+                            <span><i class="fas fa-code"></i> Hashcat</span>
+                            <span><i class="fas fa-code"></i> API Integration</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Cybersecurity Portfolio. All rights reserved.</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
